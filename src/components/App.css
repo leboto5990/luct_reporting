@@ -1,0 +1,130 @@
+/* ===== Global App Layout ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.app-layout {
+  display: flex;
+  height: 100vh;
+}
+
+/* ===== Sidebar (Navbar) ===== */
+nav.navbar {
+  width: 220px;
+  background-color: #f0f0f0;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+nav.navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+nav.navbar a {
+  color: #111;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 12px 0;
+  transition: 0.3s ease;
+}
+
+nav.navbar a:hover {
+  color: #65b39a;
+}
+
+nav.navbar button {
+  margin-top: 20px;
+  background-color: #6ed597;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+nav.navbar button:hover {
+  background-color: #b02a37;
+}
+
+/* ===== Main Content Area ===== */
+.main-content {
+  flex-grow: 1;
+  padding: 30px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+.main-content h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ===== Forms (Login, Register, Report) ===== */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fafafa;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+form button {
+  width: 100%;
+  background-color: #98d1b7;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #72c3b4;
+}
+
+/* ===== Tables (Reports, Courses) ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #78c5b3;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
